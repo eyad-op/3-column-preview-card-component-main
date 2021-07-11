@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  padding-bottom: 2.5rem;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 5.44rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container__card {
+  width: 327px;
+  height: 443px;
+  padding: 4rem 3rem;
+}
+
+.container .container__card .card-logo {
+  padding-bottom: 2.5rem;
+}
+
+.container .container__card p {
+  padding-bottom: 1.5rem;
+}
+
+.container .container__card button {
+  width: 150px;
+  height: 50px;
+  border-radius: 60px;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  border: none;
+  mix-blend-mode: screen;
+}
+
+.container .container__card button:hover {
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.container .container__card-sedan {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+
+.container .container__card-svus {
+  background-color: #006970;
+}
+
+.container .container__card-luxury {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+
+.attribution {
+  text-align: center;
+  color: #004241;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #e38826;
+}
+
+@media screen and (min-width: 786px) {
+  .container {
+    width: 100%;
+    height: 90%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+  }
+  .container .container__card-sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .container .container__card-luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

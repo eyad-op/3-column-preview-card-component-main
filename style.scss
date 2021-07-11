@@ -1,0 +1,104 @@
+$bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-darkcyan: hsl(179, 100%, 13%);
+$par-color: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsl(0, 0%, 95%);
+$ff-heading: "Big Shoulders Display", cursive;
+$ff-text: "Lexend Deca", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-gray;
+  font-size: 15px;
+  font-family: $ff-text;
+  height: 100vh;
+  color: $par-color;
+}
+
+h1 {
+  color: $light-gray;
+  font-family: $ff-heading;
+  padding-bottom: 2.5rem;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 5.44rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .container__card {
+    width: 327px;
+    height: 443px;
+    padding: 4rem 3rem;
+
+    .card-logo {
+      padding-bottom: 2.5rem;
+    }
+    p {
+      padding-bottom: 1.5rem;
+    }
+
+    button {
+      width: 150px;
+      height: 50px;
+      border-radius: 60px;
+      font-family: $ff-text;
+      cursor: pointer;
+      border: none;
+      mix-blend-mode: screen;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $light-gray;
+        color: $light-gray;
+      }
+    }
+  }
+  .container__card-sedan {
+    background-color: $bright-orange;
+    border-radius: 10px 10px 0 0;
+  }
+  .container__card-svus {
+    background-color: $Dark-cyan;
+  }
+  .container__card-luxury {
+    background-color: $Very-darkcyan;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.attribution {
+  text-align: center;
+  color: $Very-darkcyan;
+
+  a {
+    text-decoration: none;
+    color: $bright-orange;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .container {
+    width: 100%;
+    height: 90%;
+    flex-direction: row;
+    margin: auto;
+
+    .container__card-sedan {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .container__card-luxury {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+} ;
