@@ -55,7 +55,7 @@ h1 {
       cursor: pointer;
       border: none;
       mix-blend-mode: screen;
-
+      font-weight: bold;
       &:hover {
         background-color: transparent;
         border: 1px solid $light-gray;

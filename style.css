@@ -60,6 +60,7 @@ h1 {
   cursor: pointer;
   border: none;
   mix-blend-mode: screen;
+  font-weight: bold;
 }
 
 .container .container__card button:hover {
