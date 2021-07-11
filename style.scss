@@ -93,6 +93,13 @@ h1 {
     flex-direction: row;
     margin: auto;
 
+    .container__card {
+      height: fit-content;
+      button {
+        margin-top: 4rem;
+      }
+    }
+
     .container__card-sedan {
       border-radius: 10px 0 0 10px;
     }

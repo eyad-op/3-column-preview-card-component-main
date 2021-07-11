@@ -102,6 +102,14 @@ h1 {
             flex-direction: row;
     margin: auto;
   }
+  .container .container__card {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container .container__card button {
+    margin-top: 4rem;
+  }
   .container .container__card-sedan {
     border-radius: 10px 0 0 10px;
   }
